@@ -1,3 +1,3 @@
 require 'erb'
 require 'fileutils'
-require 'motion/project/bypass'
+require 'motion/project/sidestep'

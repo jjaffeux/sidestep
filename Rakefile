@@ -10,7 +10,7 @@ rescue LoadError
 end
 
 Motion::Project::App.setup do |app|
-  app.name = 'bypass'
+  app.name = 'sidestep'
 
   if app.template == :android
     app.archs = ['x86']

@@ -2,7 +2,7 @@ class AppDelegate
   attr_reader :window
 
   def application(application, didFinishLaunchingWithOptions:launchOptions)
-    p "[!] CUSTOM APP DELEGATE FOR BY PASS"
+    p "[!] CUSTOM APP DELEGATE FOR SIDESTEP"
     @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
     controller = <%= controller %>.alloc.init
     <% keys.each do |key, value| %>

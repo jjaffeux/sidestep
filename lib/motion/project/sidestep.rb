@@ -1,5 +1,5 @@
 module Motion::Project
-  class Bypass
+  class Sidestep
     if App.config.template == :ios
       MAIN = "app_delegate"
     else
@@ -57,17 +57,17 @@ module Motion::Project
 end
 
 desc "Run a specific controller"
-task :bypass, [:controller] do |t, args|
+task :sidestep, [:controller] do |t, args|
   if args[:controller]
     controller = args[:controller]
   else
-    App.fail("You have to provide a controller, eg: rake bypass[MyController]")
+    App.fail("You have to provide a controller, eg: rake sidestep[MyController]")
   end
 
   ARGV.shift
   keys = ARGV.map { |option| option.split("=") }.to_h
 
-  Motion::Project::Bypass.new(controller, keys).replace
+  Motion::Project::Sidestep.new(controller, keys).replace
 
   if App.config.template == :ios
     Rake::Task[:simulator].invoke

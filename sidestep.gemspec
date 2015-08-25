@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
-VERSION = "1.1".freeze
+VERSION = "2.0.0".freeze
 
 Gem::Specification.new do |spec|
-  spec.name          = "bypass"
+  spec.name          = "sidestep"
   spec.version       = VERSION
   spec.authors       = ["Joffrey Jaffeux"]
   spec.email         = ["j.jaffeux@gmail.com"]
