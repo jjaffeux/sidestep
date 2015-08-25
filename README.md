@@ -22,7 +22,7 @@ You should now have access to a new rake task command :
 
     rake sidestep[MyController]
 
-You can also provide params to your controller :
+You can also provide params to your controller (not available for android atm) :
 
     rake sidestep[MyController] id=5
 
