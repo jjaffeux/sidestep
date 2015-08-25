@@ -1,0 +1,14 @@
+class AppDelegate
+  attr_reader :window
+
+  def application(application, didFinishLaunchingWithOptions:launchOptions)
+    @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
+    controller = <%= controller %>.alloc.init
+    <% keys.each do |key, value| %>
+      controller.<%= key %> = <%= value %>
+    <% end %>
+    @window.rootViewController = controller
+    @window.makeKeyAndVisible
+    true
+  end
+end
