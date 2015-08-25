@@ -1,0 +1,6 @@
+class MainActivity < Android::App::Activity
+  def onCreate(savedInstanceState)
+    super
+    startActivity(Android::Content::Intent.new(self, <%= controller %>))
+  end
+end

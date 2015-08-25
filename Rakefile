@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 $:.unshift("/Library/RubyMotion/lib")
-require 'motion/project/template/ios'
-# require './lib/bypass'
+require 'motion/project/template/android'
 
 begin
   require 'bundler'
@@ -11,6 +10,10 @@ rescue LoadError
 end
 
 Motion::Project::App.setup do |app|
-  # Use `rake config' to see complete project settings.
   app.name = 'bypass'
+
+  if app.template == :android
+    app.archs = ['x86']
+    app.api_version = "21"
+  end
 end
