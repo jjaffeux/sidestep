@@ -1,9 +1,9 @@
 class Test < UIViewController
   attr_accessor :id
 
-  def init
+  def viewDidLoad
     super
     self.view.backgroundColor = UIColor.redColor
-    self
+    p id
   end
 end
