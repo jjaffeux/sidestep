@@ -26,6 +26,8 @@ You can also provide params to your controller (not available for android atm) :
 
     rake sidestep[MyController] id=5
 
+*NOTE* : If you use zsh you need to escape the brackets => rake sidestep\[MyController\]
+
 ## Custom behavior
 
 If you need to add custom initialization (Google analytics SDK...) in the delegate before showing the controller, you can create your own `app_delegate.erb` (note: it's ERB not RB) at the root of the app. See this repository for example.
