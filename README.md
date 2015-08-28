@@ -26,7 +26,7 @@ You can also provide params to your controller (not available for android atm) :
 
     rake sidestep[MyController] id=5
 
-*NOTE* : If you use zsh you need to escape the brackets => rake sidestep\[MyController\]
+*NOTE* : If you use zsh you need to escape the brackets => `rake sidestep\[MyController\]`
 
 ## Custom behavior
 
