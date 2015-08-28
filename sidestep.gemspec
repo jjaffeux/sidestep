@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-VERSION = "2.0.0".freeze
+VERSION = "2.0.1".freeze
 
 Gem::Specification.new do |spec|
   spec.name          = "sidestep"
