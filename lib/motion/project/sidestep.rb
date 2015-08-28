@@ -67,6 +67,10 @@ task :sidestep, [:controller] do |t, args|
   ARGV.shift
   keys = ARGV.map { |option| option.split("=") }.to_h
 
+  if keys.fetch('debug')
+    ENV['debug'] = keys.delete('debug')
+  end
+
   Motion::Project::Sidestep.new(controller, keys).replace
 
   if App.config.template == :ios
