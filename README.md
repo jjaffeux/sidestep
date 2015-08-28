@@ -18,11 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-You should now have access to a new rake task command :
+You should now have access to a new rake task command':
 
     rake sidestep[MyController]
 
-You can also provide params to your controller (not available for android atm) :
+You can also provide params to your controller (not available for android atm):
 
     rake sidestep[MyController] id=5
 
@@ -32,7 +32,7 @@ You can also provide params to your controller (not available for android atm) :
 
 You can pass the debug flag to sidestep:
 
-    `rake sidestep[MyController] debug=1`
+    rake sidestep[MyController] debug=1
 
 ## Custom behavior
 
