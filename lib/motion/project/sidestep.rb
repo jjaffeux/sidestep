@@ -67,7 +67,7 @@ task :sidestep, [:controller] do |t, args|
   ARGV.shift
   keys = ARGV.map { |option| option.split("=") }.to_h
 
-  if keys.fetch('debug')
+  if keys.fetch('debug', nil)
     ENV['debug'] = keys.delete('debug')
   end
 
